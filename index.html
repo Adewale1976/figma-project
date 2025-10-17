@@ -9,20 +9,57 @@
   <title>Frontend Mentor | QR code component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    @media (min-width: 200px){
+      #background{
+        width: 300px;
+        margin-right: 35%;
+    }
+
+    body{background-color: hsl(212, 45%, 89%) ;}
+    #background {
+      margin-top: 20%;
+      margin-left: 35%;
+      height: 500px;
+      margin-bottom: 25%;
+      margin-right: 35%;
+      background-color: white;
+       border-radius: 10px;
+      
+}
+#texts{
+  text-align: center;
+       font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 7x;
+  margin-right: 7px;
+}
+      
+    #image{
+      width: 280px;
+      border-radius: 10px;
+      height: 250px;
+      margin: 10px 10px 0 10px;
+    }
   </style>
 </head>
 <body>
-
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div id="background">
+    <img id="image" src="./images/image-qr-code.png" alt="code">
+    <div id="texts"><h1>Improve your front-end skills by building projects</h1>
+    <p style="font-size: 15px">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
   </div>
+
+  
+  
+  
+  
 </body>
 </html>
